@@ -50,6 +50,9 @@ std::string Word::replace_word(
 
 int main(int argc, char** argv) noexcept {
     if(argc < 3) {
+        std::cout << "Usage: "
+            << std::string(argv[0]) + " {file} {arg...arg...arg..}\n";
+
         return 1;
     }
 
